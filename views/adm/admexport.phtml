@@ -1,0 +1,90 @@
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <div class="page-content">
+
+        <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE HEAD -->
+        <div class="page-head">
+            <!-- BEGIN PAGE TITLE -->
+            <div class="page-title">
+                <h1>ProWo - 2015 - Export </h1>
+            </div>
+
+        </div>
+        <!-- END PAGE HEAD -->
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                if (isset($error_message) AND $error_message == true) {
+                    echo '<div class="Metronic-alerts alert alert-danger fade in" id="prefix_549034258045">
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button"></button>
+                ' . $error_message . '</div>
+                ';
+                }
+                if (isset($success_message) AND $success_message == true) {
+                    echo '<div class="alert alert-success">
+								<strong>Erfolgreich!</strong> Änderungen wurden übernommen.
+							</div>';
+                }
+
+
+                ?>
+                <!-- BEGIN PORTLET-->
+                <div class="portlet box yellow-crusta">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-gift"></i>
+                            Wahlen als Liste - Exportieren
+                        </div>
+                    </div>
+                    <div class="portlet-body form">
+                        <form action="/getdata" id="form-username" method="post" class="form-horizontal form-bordered">
+
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label">Vorhandene - Exporte:</label>
+
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <?php
+                                        $handle = opendir($_SERVER['DOCUMENT_ROOT'] . '/blablub/');
+                                        echo "Verzeichnisinhalt:<br>";
+                                        while ($datei = readdir($handle)) {
+                                            if ($datei == '.' OR $datei == '..') {
+
+                                            } else {
+                                                echo '<a href="/blablub/' . $datei . '" target="_blank">' . $datei . '</a><br>';
+                                            }
+                                        }
+                                        closedir($handle);
+
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href=""></a>
+
+                            <div class="form-actions">
+                                <div class="row">
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button type="submit" class="btn purple"><i class="fa fa-check"></i>
+                                            Export-Aktualisieren
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+

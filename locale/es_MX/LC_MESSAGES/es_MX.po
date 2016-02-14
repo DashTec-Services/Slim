@@ -1,0 +1,1558 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SP\n"
+"POT-Creation-Date: 2014-04-08 11:28+0100\n"
+"PO-Revision-Date: 2014-04-08 13:28+0100\n"
+"Last-Translator: David  <info@dashtec.de>\n"
+"Language-Team: Da <info@dashtec.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\Users\\David_2\\Dropbox\\Programmierung\\SPAH\n"
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/core/SP/Menu/MenuInclusion.php:27
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/authentication.php:57
+msgid "Login erfolgreich"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:138
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:183
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:195
+msgid "S:P Installation"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:247
+msgid "MySql Daten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:254
+msgid "SSH Daten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:261
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:442
+msgid "Benutzer Daten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:268
+msgid "Konfiguration"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:276
+msgid "MySql Konfiguration"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:287
+msgid "DB Name"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:294
+msgid "DB Benutzer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:301
+msgid "DB Passwort"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:314
+msgid "Systemanforderungen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:325
+msgid "Ordner <b>\"shoutcast\"</b> besitzt die erforderlichen Rechte"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:327
+msgid ""
+"Ordner <b>\"shoutcast\"</b> besitzt <b>NICHT</b> die erforderlichen Rechte"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:331
+msgid "Erweiterung: <b>\"ssh2\"</b> gefunden"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:333
+msgid "Erweiterung: <b>\"ssh2\" - NICHT</b> gefunden"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:337
+msgid "Erweiterung: <b>\"MySql\"</b> gefunden "
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:339
+msgid "Erweiterung: <b>\"MySql\" - NICHT</b> gefunden "
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:343
+msgid "Erweiterung: <b>\"safe_mode\" - NICHT</b> ist ON"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:345
+msgid "Erweiterung: <b>\"safe_mode\"</b> is OFF! "
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:351
+msgid "Schritt 2"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:354
+msgid "Es müssen alle Überprüfungen bestanden werden!!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:371
+msgid "Profil - Einstellungen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:383
+msgid "Server IP"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:390
+msgid "ssh Benutzer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:397
+msgid "ssh Passwort"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:404
+msgid "ssh_port"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:411
+msgid "Server_doc_root"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:426
+msgid "ssh Daten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:453
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:55
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:38
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:61
+msgid "Vorname"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:460
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:62
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:44
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:69
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:53
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:53
+msgid "Nachname"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:467
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:69
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:50
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:77
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:60
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:60
+msgid "Straße"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:473
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:76
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:56
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:85
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:67
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:67
+msgid "Hausnummer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:480
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:83
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:67
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:101
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:81
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:81
+msgid "PLZ"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:487
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:90
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:62
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:93
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:74
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:74
+msgid "Ort"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:494
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:97
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:36
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:88
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:88
+msgid "Tel"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:501
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:111
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:37
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:102
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:102
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/licenseshow.phtml:48
+msgid "Mail"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:529
+msgid "Komplett"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:537
+msgid "Admin - Benutzer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:539
+msgid "Admin - Passwort"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:544
+msgid "Warnung"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:545
+msgid "Der Ordner install ist noch vorhanden!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/install/install.php:550
+msgid "fertig"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/authentication.php:42
+msgid "Keinen Account gefunden"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/authentication.php:48
+msgid "Benutzer nicht gefunden!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/authentication.php:66
+msgid "Abmelden erfolgreich"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/benutzerverwaltung.php:67
+msgid "Benutzer gelöscht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/benutzerverwaltung.php:67
+msgid "Der Benutzer wurde erfolgreich gelöscht!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/benutzerverwaltung.php:78
+msgid "Benutzer bearbeitet"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/benutzerverwaltung.php:96
+msgid "Benutzer wurde aktiviert"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/benutzerverwaltung.php:142
+msgid "Angaben nicht vollständig"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/benutzerverwaltung.php:142
+msgid "Name, Nachname und Mail werden benötigt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/benutzerverwaltung.php:174
+msgid "Benutzer wurde angelegt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/dj.php:76
+msgid "DJ zum Stream hinzugefügt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/dj.php:76
+msgid "Stream benötigt einen Neustart!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/dj.php:91
+msgid "DJ zum Account hinzugefügt "
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/dj.php:91
+msgid "Der Streamserver benötigt einen Neustart!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/dj.php:111
+msgid "DJ bearbeitet"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/news.php:46
+msgid "Nachricht hinzugefügt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/news.php:78
+msgid "Nachricht wurde gelöscht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/station.php:146
+msgid "Server gestartet"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/station.php:149
+msgid "Server gestoppt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/station.php:204
+msgid "Server gelöscht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/routes/support.php:57
+msgid "Antwort gesendet"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:36
+msgid "Bitte Benutzernamen und Passwort angeben"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:47
+msgid "Anmeldung"
+msgstr "ESPA"
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:51
+msgid "Anmeldung ist erforderlich!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:54
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:55
+msgid "Benutzername"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:61
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:63
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:47
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:31
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:53
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:115
+msgid "Passwort"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/authentication/login.phtml:74
+msgid "Anmelden"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:29
+msgid "Neuen Benutzer hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:39
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:25
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:45
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:33
+msgid "Kundennummer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:104
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:78
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:117
+msgid "Handy"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:116
+msgid ""
+"Wird benötigt bei der Automatischen erstellung des\n"
+"                                            Passwortes!"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:121
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:88
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:133
+msgid "Benutzerrechte"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:126
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:131
+msgid ""
+"Benutzer (Starten und Stoppen der Streams, Playlisten bearbeiten, DJ\n"
+"                                            anlegen, löschen)"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:137
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:118
+msgid "Benutzer hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:158
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:187
+msgid "<b>-Hinweise- </b>\"Benutzer hinzufügen\""
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:164
+msgid ""
+"Kundennummern zur Identifikation von verschiedenen Accounts. Diese kann je "
+"nach Einstellungen\n"
+"                            als Login verwendet werden."
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:169
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:197
+msgid ""
+"Benutzer mit Administrator rechten erhalten vollen Zugriff auf das Panel"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/adduser.phtml:173
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:200
+msgid ""
+"Automatisch erstellte Passwörter werden den Benutzer per Mail zugeschickt."
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:72
+msgid "Tel."
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:83
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:125
+msgid "E-Mail"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:93
+msgid "SuperAdmin"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:98
+msgid "Stream-Inhaber"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:104
+msgid "Benutzer wirklich LÖSCHEN?"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:109
+msgid "JA BENUTZER LÖSCHEN"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:114
+msgid "nein"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/deluser.phtml:119
+msgid "LÖSCHEN"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:24
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:26
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:38
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:153
+msgid "Benutzerverwaltung"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:57
+msgid "Wenn gewünscht bitte neues Passwort eingeben"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:109
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:35
+msgid "Telefon"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:141
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:54
+msgid "Administrator"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:148
+msgid "Stream-Kunde"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:161
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:64
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:51
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:63
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:141
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:161
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:181
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:140
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:160
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:180
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:153
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:153
+msgid "Ja"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:168
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:68
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:55
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:67
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:148
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:168
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:188
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:147
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:167
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:187
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:157
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:157
+msgid "Nein"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:174
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:118
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:227
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:241
+msgid "Speichern"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/edituser.phtml:192
+msgid ""
+"Kundennummern zur Identifikation von verschiedenen Accounts. Diese kann je "
+"nach\n"
+"                                Einstellungen als Login\n"
+"                                verwendet werden."
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:25
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:117
+msgid "Benutzerliste"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:34
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:46
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:46
+msgid "Name"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:35
+msgid "Adresse"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:38
+msgid "Benutzergruppe"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:39
+msgid "Is Aktiv?"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:40
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:38
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:36
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportuserlist.phtml:33
+msgid "Einstellungen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:53
+msgid "Admininstrator"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:55
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:112
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:29
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:32
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:31
+msgid "Benutzer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:57
+msgid "DJ"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:64
+msgid "aktiv"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:68
+msgid "inaktiv"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:76
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:74
+msgid "bearbeiten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/benutzerverwaltung/listuser.phtml:77
+msgid "löschen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:29
+msgid "DJ - Hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:39
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:39
+msgid "DJ- Name"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:95
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:95
+msgid "Mobil"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:109
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:109
+msgid "Skype"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:118
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/playlist.phtml:89
+msgid "Anlegen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:139
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:139
+msgid "Hints "
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:139
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:139
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:129
+msgid "DJ hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/adddj.phtml:144
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:144
+msgid "DJ-Benutzer Identifikation"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/editdj.phtml:29
+msgid "DJ - bearbeiten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:24
+msgid "DJ-User"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:32
+msgid "DJ - Name"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:33
+msgid "Benutzerinformation"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:34
+msgid "Addresse"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:36
+msgid "Kontakt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:37
+msgid "DJ vom Stream"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:48
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:49
+msgid "Phone"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:48
+msgid "Mobile"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:57
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:33
+msgid "Stream zum Benutzer hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:58
+msgid "Benutzer bearbeiten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/listdj.phtml:59
+msgid "Benutzer löschen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/dj/stationselect.phtml:27
+msgid "Stream wählen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:30
+msgid "Titel on Playlist"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:39
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:119
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/list.phtml:33
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:32
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:33
+msgid "Titel"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:40
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:120
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/list.phtml:34
+msgid "Größe"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:41
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:121
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/list.phtml:35
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:195
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:195
+msgid "Bitrate"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:42
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:122
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/list.phtml:36
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/playlist.phtml:39
+msgid "Spielzeit"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:43
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/list.phtml:37
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:36
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:72
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:83
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportuserlist.phtml:61
+msgid "Löschen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:110
+msgid "Datein im Speicher"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/editplaylist.phtml:123
+msgid "Auswählen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/list.phtml:73
+msgid "Gesamtstatistiken"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/playlist.phtml:28
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/playlist.phtml:85
+msgid "Dateien"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/playlist.phtml:37
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:116
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:36
+msgid "Playlist"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/playlist.phtml:38
+msgid "Titel in Playliste"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/filemanager/playlist.phtml:40
+msgid "Aktion"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:21
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:22
+msgid "Streamers:Panel"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:33
+msgid "Willkommen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:38
+msgid "Du hast"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:38
+msgid "Nachrichten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:39
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:37
+msgid "Abmelden"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:79
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:76
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:21
+msgid "Home"
+msgstr "arranque "
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:86
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:83
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:88
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/usernews.phtml:28
+msgid "News"
+msgstr "arranque "
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:91
+msgid "News übersicht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:92
+msgid "New hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:99
+msgid "Stream"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:104
+msgid "Streams Übersicht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:105
+msgid "Stream hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:125
+msgid "Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:131
+msgid "Server Konfiguration"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:132
+msgid "Lizenz"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:139
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:135
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/streamswitch.phtml:28
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/addticket.phtml:28
+msgid "Support"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/admin.phtml:144
+msgid "Support Nachrichten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:34
+msgid "Willkommen zurück, "
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:96
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/user.phtml:49
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:24
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:24
+msgid "Streams"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:101
+msgid "Streams anzeigen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:102
+msgid "AutoDj - Setup"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:110
+msgid "Musikverwaltung"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:115
+msgid "MP3 "
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:117
+msgid "Upload"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:123
+msgid "DJ-Benutzer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:128
+msgid "Benutzer anzeigen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:141
+msgid "Tickets anzeigen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/menu/user.phtml:142
+msgid "Ticket eröffnen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:29
+msgid "Benutzer-News"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:39
+msgid "Überschrift"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:44
+msgid "Überschrift für die Nachricht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:49
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:33
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:34
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportuserlist.phtml:32
+msgid "Nachricht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:58
+msgid "Nachricht auf der Login-Seite anzeigen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:75
+msgid "Nachricht aktiv?"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:81
+msgid "Nachricht anzeigen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:85
+msgid "Nachricht verstecken"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:94
+msgid "Information (Grün)"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:95
+msgid "Warnung (Gelb)"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:96
+msgid "Fehler (Rot)"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:99
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:94
+msgid "comming soon"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:103
+msgid "Speichere Nachricht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:120
+msgid "Nachricht beim Login anzeigen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/addnews.phtml:126
+msgid "Beschreibung"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/usernews.phtml:43
+msgid "schließen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:24
+msgid "User messages"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:34
+msgid "Login-News?"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/news/viewlist.phtml:35
+msgid "Benutzern die Nachricht zeigen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/licenseshow.phtml:24
+msgid "Lizenzinformation"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/licenseshow.phtml:32
+msgid "Lizenzinhaber"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/licenseshow.phtml:40
+msgid "Lizenz-ID"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/licenseshow.phtml:66
+msgid "S:P Lizenz Informationen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/licenseshow.phtml:71
+msgid "Informationen zur"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/licenseshow.phtml:72
+msgid "LIZENZ"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:28
+msgid "S:P Server - Einstellungen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:38
+msgid "S:P Titel"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:46
+msgid "URL"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:53
+msgid "ohne http://www."
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:57
+msgid "Server document root"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:65
+msgid "IP"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:73
+msgid "ssh - Username"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:82
+msgid "ssh - Password"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:90
+msgid "ssh - Port"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:98
+msgid "Server-Mail-Adresse"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:105
+msgid "Informationen über neue Tickets"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:111
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:253
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:226
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:241
+msgid "Save"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:150
+msgid "Server Information"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/server/serverconf.phtml:180
+msgid "Unterstützte Module"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:39
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/user.phtml:39
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:121
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:120
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:185
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:185
+msgid "MP3"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:49
+msgid "Stream-Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:59
+msgid "Neue Support Tickets"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:86
+msgid "Quick Stats"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:102
+msgid "Streams online"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/adm.phtml:128
+msgid "Support - Tickets letzten 30 Tage"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/user.phtml:29
+msgid "DJ User"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/user.phtml:59
+msgid "Playtime"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/spwelcome/user.phtml:84
+msgid "Benutzer speicher"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:24
+msgid "Streams-Übersicht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:26
+msgid "Stream-Server bearbeiten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:36
+msgid "Streamserver"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:44
+msgid "Stream-Name"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:53
+msgid "Shoutcast MP3 Lizenz"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:65
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:64
+msgid "Stream Titel"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:73
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:72
+msgid "Stream URL"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:81
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:80
+msgid "IRC"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:89
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:88
+msgid "ICQ"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:97
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:96
+msgid "AIM"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:105
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:217
+msgid "DJ Passwort"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:113
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:112
+msgid "Encoder"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:128
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:127
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:189
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:189
+msgid "AAC"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:133
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:132
+msgid "Shuffle"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:153
+msgid "Öffentlicher Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:173
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:172
+msgid "Public Transcoder"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:193
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:192
+msgid "Genre"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:201
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:200
+msgid "URL Format"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:209
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:208
+msgid "Titel-Format"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:225
+msgid "Speichern und Neustart"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:243
+msgid "Edit - Stream - Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:248
+msgid "Save and Restart"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:249
+msgid "Restart the Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/admineditstream.phtml:254
+msgid "Save reset required"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:24
+msgid "Stream-Übersicht"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:33
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:32
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:44
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:32
+msgid "Streamname"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:34
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:33
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:33
+msgid "Hörer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:35
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:34
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:34
+msgid "Port"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:36
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:35
+msgid "Server (Start/Stop)"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:37
+msgid "Setup"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:62
+msgid "An"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:66
+msgid "Aus"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:76
+msgid "edit"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:77
+msgid "delete"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:87
+msgid "Alle Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:98
+msgid "Server Neustart"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:99
+msgid "Alle Server Ein"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/adminshowlist.phtml:100
+msgid "Alle Server Aus"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:35
+msgid "Status"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:37
+msgid "DJ Start/Stop"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:82
+msgid "please start the stream server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:89
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:60
+msgid "ON"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/userautodj.phtml:93
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usershowstreams.phtml:64
+msgid "OFF"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:24
+msgid "View"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:26
+msgid "Server bearbeiten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:36
+msgid "Edit Stream Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:52
+msgid "Shoutcast MP3 license"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:104
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:216
+msgid "DJ Password"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:152
+msgid "Public Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:242
+msgid "Stream bearbeiten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:247
+msgid "Einstellungen sichern und Neustart"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/station/usereditserver.phtml:252
+msgid "Speichern ohne Neustart"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:26
+msgid "Neuen ShoutCast 1.9 Server"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:33
+msgid "Stream zum benutzer hinzufügen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:48
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:48
+msgid "ShoutCast Transcoder"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:64
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:64
+msgid "Benutzte Ports"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:82
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:82
+msgid "Stream port"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:90
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:90
+msgid "DJ Port"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:98
+msgid "Maximale Hörer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:102
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:135
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:102
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:135
+msgid "8"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:103
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:136
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:103
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:136
+msgid "12"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:104
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:137
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:104
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:137
+msgid "32"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:105
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:138
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:105
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:138
+msgid "64"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:106
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:109
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:139
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:142
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:106
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:109
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:139
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:142
+msgid "128"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:107
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:140
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:107
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:140
+msgid "256"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:108
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:141
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:108
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:141
+msgid "512"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:123
+msgid "Admin Passwort"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:131
+msgid "Zeige letzten X Songs"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:148
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:148
+msgid "Server ist öffentlich"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:172
+msgid "Transcoder Setup"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:180
+msgid "Streaming als"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:185
+msgid "Lizenz von ShoutCast wird benötigt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:199
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:199
+msgid "128000"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:206
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:206
+msgid "Samplerate"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:210
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:210
+msgid "44100"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:218
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:218
+msgid "Kanäle"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:222
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:222
+msgid "1"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:223
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:223
+msgid "2"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:224
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:224
+msgid "3"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:231
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:231
+msgid "DJ-Password"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:254
+msgid "Bitte beachten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc198.phtml:260
+msgid "Anlegen eines ShoutCast v1.x Servers"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:26
+msgid "Neuen Streamserver v2.0"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:98
+msgid "Max Hörer"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:115
+msgid "Password"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:123
+msgid "Admin Password"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:131
+msgid "Zeige die letzten X Songs"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:172
+msgid "Transcoder Einstellungen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:180
+msgid "Streamt als"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:185
+msgid "License from Shoutcast (required license)"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:254
+msgid "Please note"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/sc20.phtml:260
+msgid "Anlegen eines ShoutCast v2.0 Servers"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/streamAddSelct/streamswitch.phtml:35
+msgid "Bitte Stream-Server wählen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/addticket.phtml:41
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/replyticket.phtml:31
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportuserlist.phtml:58
+msgid "Senden"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/replyticket.phtml:21
+msgid "Auf Ticket antworten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/replyticket.phtml:25
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:56
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportuserlist.phtml:50
+msgid "Antwort:"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:32
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportuserlist.phtml:31
+msgid "Datum"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:35
+msgid "Optionen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:46
+msgid "Consumer ID:"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:64
+msgid "Antworten"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:71
+msgid "Offen"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:75
+msgid "in bearbeitung"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportlist.phtml:79
+msgid "Erledigt"
+msgstr ""
+
+#: C:\Users\David_2\Dropbox\Programmierung\SPAH/views/support/supportuserlist.phtml:48
+msgid "Admin:"
+msgstr ""
+
+#~ msgid "Marlow"
+#~ msgstr "esparanto"
+
+#~ msgid "Hallo"
+#~ msgstr "DAvid"

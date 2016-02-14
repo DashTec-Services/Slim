@@ -1,0 +1,146 @@
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE HEAD -->
+        <div class="page-head">
+            <div class="page-title">
+                <h1>Wahlen zur Projektwoche <?= date('Y') ?>
+                    <small><?= $_SESSION['proWoTopic'] ?></small>
+                </h1>
+            </div>
+        </div>
+        <!-- END PAGE HEAD -->
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="portlet light">
+            <div class="portlet-body">
+                <?php
+                if (isset($error_message) AND $error_message == true) {
+                    echo '<div class="Metronic-alerts alert alert-danger fade in" id="prefix_549034258045">
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button"></button>
+                ' . $error_message . '</div>
+                ';
+                }
+                if (isset($success_message) AND $success_message == true) {
+                    echo '<div class="alert alert-success">
+								<strong>Erfolgreich!</strong> ' . $success_message . '
+							</div>';
+                }
+
+
+                ?>
+                <!--/row-->
+                <!-- Meer Our Team -->
+                <div class="headline">
+                    <h3></h3>
+                </div>
+                <form method="post" id="myForm" action="/choice">
+
+                    <div class="row thumbnails">
+                        <?php
+                        $VoteConf = DB::queryFirstRow("SELECT * FROM config WHERE id=%s ", '1');
+
+                        $now = strtotime(date('Y-m-d H:i'));
+                        $start =$VoteConf['voteStart'].' '.$VoteConf['voteStartTime'];
+                        $stop = $VoteConf['voteEnd'].' '.$VoteConf['voteEndTime'];
+
+
+                        $start = strtotime($start);
+                        $stop = strtotime($stop);
+
+
+                        if ($now > $start AND $now < $stop){
+                        $results = DB::query("SELECT * FROM project ");
+                        $_SESSION['idForVote'] = '';
+
+                        foreach ($results as $row) {
+
+
+                            if($row['startClass'] == $_SESSION['startClass'] OR  $_SESSION['startClass'] > $row['startClass']  AND $_SESSION['startClass'] <= $row['endClass'] ){
+
+                                if ($row['maxUsers'] > $row['nowUsers'] OR $VoteConf['showVoteableProject'] == false) {
+                                    $_SESSION['idForVote'][$row['id']] = $row['id'];
+                                    ?>
+                                    <div class="col-md-4">
+
+                                        <div class="meet-our-team">
+                                            <h3>
+                                                <small>Nr.: <?= $row['projectNr'] ?></small>
+                                                <br><?= $row['title'] ?>
+                                            </h3>
+                                            <div class="team-info">
+                                                <p>
+                                                    <?= $row['text'] ?>
+                                                </p>
+                                                <b>Klasse:</b> <?= $row['startClass'] ?> - <?= $row['endClass'] ?><br>
+                                                <?php if($VoteConf['userLimit'] == true){ ?>
+                                                    <b>Max. Teilnehmer:</b> <?= $row['maxUsers'] ?><br>
+                                                    <?php
+                                                    $nowUser = $row['maxUsers'] - $row['nowUsers'];
+                                                    ?>
+                                                    <b>Restplätze:</b> <?= $nowUser ?><br>
+                                                <?php }?>
+                                                <b>Lehrkraft:</b> <?= $row['projectLeader'] ?><br>
+
+                                                <?php
+                                                if($row['maxUsers'] > $row['nowUsers'] OR $VoteConf['userLimit'] == false){
+                                                    ?>
+                                                    <a href="/prowo/<?= $row['projectNr'].'.pdf' ?>" target="_blank">'Projekt zum Download'</a><br>
+                                                    <b>Wählen?</b><br>
+
+                                                    <input
+                                                        id="option1" name="radio1" value="<?= $row['id'] ?>"
+                                                        class="make-switch switch-radio1"
+                                                        type="radio" data-label-icon="fa fa-youtube"
+                                                        data-on-text="<i class='fa fa-thumbs-up'></i>"
+                                                        data-off-text="<i class='fa fa-thumbs-down'></i>"/>
+                                                <?php } ?>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+
+                            }
+
+
+
+
+                        }
+                        ?>
+
+
+                    </div>
+
+                    <p style="">
+                        <input class="btn red btn-block" id="loginButton" value="Online-Wahl - Stimme abgeben!"
+                               type="submit">
+                    </p>
+
+                </form>
+
+            <?php
+            } else {
+
+                echo "<h3>Die Wahl ist beendet / noch nicht freigegeben!</h3>";
+            }
+
+
+
+            ?>
+
+
+
+                <!--/thumbnails-->
+                <!-- //End Meer Our Team -->
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->
+    </div>
+</div>
+<!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->

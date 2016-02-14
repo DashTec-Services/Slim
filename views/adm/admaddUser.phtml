@@ -1,0 +1,110 @@
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <div class="page-content">
+
+        <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE HEAD -->
+        <div class="page-head">
+            <!-- BEGIN PAGE TITLE -->
+            <div class="page-title">
+                <h1>ProWo - 2015 - Benutzerverwaltung </h1>
+            </div>
+
+        </div>
+        <!-- END PAGE HEAD -->
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                if(isset($error_message) AND $error_message == true){
+                    echo '<div class="Metronic-alerts alert alert-danger fade in" id="prefix_549034258045">
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button"></button>
+                '.$error_message.'</div>
+                ';}
+                if(isset($success_message) AND $success_message == true){
+                    echo '<div class="alert alert-success">
+								<strong>Erfolgreich!</strong> Änderungen wurden übernommen.
+							</div>';
+                }
+
+
+                ?>
+                <!-- BEGIN PORTLET-->
+                <div class="portlet box yellow-crusta">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-gift"></i>
+                            Benutzer - hinzufügen
+                        </div>
+                    </div>
+                    <div class="portlet-body form">
+                        <form action="/addUser" id="form-username" method="post" class="form-horizontal form-bordered">
+
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label">Vorname:</label>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" id="typeahead_example_6" name="vname" class="form-control" value="<?php if(isset($projectsettings['vname'])){echo $projectsettings['vname'];}  ?>"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label">Nachname:</label>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" id="typeahead_example_6" name="surname" class="form-control" value="<?php if(isset($projectsettings['surname'])){echo $projectsettings['surname'];}  ?>"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label">Klasse:</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control input-xsmall" name="class">
+                                        <option value="5" <?php if(isset($userdata['class']) AND $userdata['class'] == '5'){echo 'selected';}  ?>>5 Kl.</option>
+                                        <option value="6" <?php if(isset($userdata['class']) AND $userdata['class'] == '6'){echo 'selected';}  ?>>6 Kl.</option>
+                                        <option value="7" <?php if(isset($userdata['class']) AND $userdata['class'] == '7'){echo 'selected';}  ?>>7 Kl.</option>
+                                        <option value="8" <?php if(isset($userdata['class']) AND $userdata['class'] == '8'){echo 'selected';}  ?>>8 Kl.</option>
+                                        <option value="9" <?php if(isset($userdata['class']) AND $userdata['class'] == '9'){echo 'selected';}  ?>>9 Kl.</option>
+                                        <option value="10" <?php if(isset($userdata['class']) AND $userdata['class'] == '10'){echo 'selected';}  ?>>10 Kl.</option>
+                                        <option value="11" <?php if(isset($userdata['class']) AND $userdata['class'] == '11'){echo 'selected';}  ?>>11 Kl.</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label">Benutzername:</label>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" id="typeahead_example_6" name="username" class="form-control" value="<?php if(isset($projectsettings['username'])){echo $projectsettings['username'];}  ?>"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Geburtsdatum:</label>
+                                <div class="col-md-3">
+                                    <input class="form-control form-control-inline input-medium date-picker"  name="bday" size="16" value="<?php if(isset($projectsettings['bday'])){echo $projectsettings['bday'];}  ?>" type="text">
+											<span class="help-block">
+											Datum wählen </span>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <div class="row">
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button type="submit" class="btn purple"><i class="fa fa-check"></i> Speichern</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+

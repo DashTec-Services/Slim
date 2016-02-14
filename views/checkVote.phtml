@@ -1,0 +1,90 @@
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE HEAD -->
+        <div class="page-head">
+            <div class="page-title">
+                <h1>Wahlen zur Projektwoche 2015
+                    <small>Die Welt als .......</small>
+                </h1>
+            </div>
+        </div>
+        <!-- END PAGE HEAD -->
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="portlet light">
+            <div class="portlet-body">
+
+
+
+
+
+                <?php
+
+                $VoteConf = DB::queryFirstRow("SELECT * FROM config WHERE id=%s ", '1');
+
+                if(isset($error_message) AND $error_message == true){
+                    echo '<div class="Metronic-alerts alert alert-danger fade in" id="prefix_549034258045">
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button"></button>
+                '.$error_message.'</div>
+                ';}
+                if(isset($success_message) AND $success_message == true){
+                    echo '<div class="alert alert-success">
+								<strong>Erfolgreich! </strong> '.$success_message.'
+							</div>';
+                }
+
+                    ?>
+                    <div class="col-md-3">
+                        <div class="meet-our-team">
+                            <h3><small>Nr.: <?= $voteresult['projectNr'] ?></small> <?= $voteresult['title'] ?>
+                            </h3>
+                            <div class="team-info">
+                                <p>
+                                    <?= $voteresult['text'] ?>
+                                </p>
+                                <b>Klasse:</b> <?= $voteresult['startClass'] ?> - <?= $voteresult['endClass'] ?> <br>
+                                <?php if($VoteConf['userLimit'] == true){ ?>
+                                    <b>Max. Teilnehmer:</b> <?= $voteresult['maxUsers'] ?><br>
+                                    <?php
+                                    $nowUser = $voteresult['maxUsers'] - $voteresult['nowUsers'];
+                                    ?>
+                                    <b>Restplätze:</b> <?= $nowUser ?><br>
+                                <?php }?>
+                                <b>Lehrkraft:</b> <?= $voteresult['projectLeader'] ?><br>
+
+                                <br>
+                                <br>
+                                <a href="/prowo/<?= $voteresult['projectNr'].'.pdf' ?>" target="_blank">'Projekt zum Download'</a><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                <div class="row thumbnails">
+
+
+
+                    <form method="post" id="myForm" action="/choice">
+
+                </div>
+                <!--/thumbnails-->
+                <!-- //End Meer Our Team -->
+                <p style="position: relative; top: 20px;">
+                    <input class="btn green btn-block" id="loginButton" name="doVote" value="Wahl bestätigen!"  type="submit">
+                    <input class="btn red btn-block" id="loginButton" name="reset" value="Wahl zurücksetzen"  type="submit">
+
+                </p>
+                </form>
+            </div>
+
+        </div>
+        <!-- END PAGE CONTENT-->
+    </div>
+</div>
+<!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->

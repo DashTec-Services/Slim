@@ -1,0 +1,63 @@
+<div class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="/">
+                <img src="http://www.raabe-schule.info/assets/wrs/img/wrs-logo.png">
+            </a>
+        </div>
+
+        <h1 style="position: absolute; left: 125px;">Wilhelm-Raabe-Schule</h1>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+
+
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+
+
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="separator hide">
+                    </li>
+
+                    <li class="separator hide">
+                    </li>
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-user dropdown-dark">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<span class="username username-hide-on-mobile">
+						<?= $_SESSION['UserName']?> </span>
+                            <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                            <img alt="" class="img-circle" src="../../assets/admin/layout4/img/avatar.png"/>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="/logout">
+                                    <i class="icon-key"></i> Abmelden </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            </a>
+        </div>
+        <!-- END PAGE TOP -->
+
+    </div>
+    <!-- END HEADER INNER -->
+
+
+</div>
+
+
+<!-- END HEADER -->
+<div class="clearfix">
+
+</div>

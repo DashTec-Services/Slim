@@ -1,0 +1,163 @@
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <div class="page-content">
+
+        <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE HEAD -->
+        <div class="page-head">
+            <!-- BEGIN PAGE TITLE -->
+            <div class="page-title">
+                <h1>Einstellungen ProWo - 2015 </h1>
+            </div>
+
+        </div>
+        <!-- END PAGE HEAD -->
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                if(isset($error_message) AND $error_message == true){
+                    echo '<div class="Metronic-alerts alert alert-danger fade in" id="prefix_549034258045">
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button"></button>
+                '.$error_message.'</div>
+                ';}
+                if(isset($success_message) AND $success_message == true){
+                    echo '<div class="alert alert-success">
+								<strong>Erfolgreich!</strong> Änderungen wurden übernommen.
+							</div>';
+                }
+
+
+                ?>
+                <!-- BEGIN PORTLET-->
+                <div class="portlet box yellow-crusta">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-gift"></i>
+                            Einstellungen
+                        </div>
+                    </div>
+                    <div class="portlet-body form">
+                        <form action="/settings" id="form-username" method="post" class="form-horizontal form-bordered">
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">ALLE DATEN LÖSCHEN ??</label>
+                                <div class="col-md-9">
+                                    <input type="checkbox" class="make-switch" data-on-text="Ja" name="delCheck1" data-off-text="-">
+                                    <input type="checkbox" class="make-switch" data-on-text="Ja" name="delCheck2" data-off-text="-">
+                                    <input type="checkbox" class="make-switch" data-on-text="Ja" name="delCheck3" data-off-text="-">
+                                    <p class="help-block">
+                                        Es werden alle Daten gelöscht!!! (Schüler, Projekte, Wahlergebnisse!!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Schüler - Login</label>
+                                <div class="col-md-9">
+                                    <input type="checkbox" class="make-switch" name="votersLogin"  data-size="normal"  <?php if(isset($projectsettings['votersLogin']) and $projectsettings['votersLogin'] == true ){echo 'checked';}  ?>>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Wählen möglich ab:</label>
+                                <div class="col-md-3">
+                                    <input class="form-control form-control-inline input-medium date-picker" name="startVote" data-date-format="dd.mm.yyyy" size="16" value="<?php if(isset($projectsettings['startVote'])){echo $projectsettings['startVote'];}  ?>" type="text">
+											<span class="help-block">
+											Datum wählen </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Start-Zeit</label>
+                                <div class="col-md-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control timepicker timepicker-24" name="voteStartTime" value="<?php if(isset($projectsettings['voteStartTime'])){echo $projectsettings['voteStartTime'];}  ?>">
+												<span class="input-group-btn">
+												<button type="button" class="btn default"><i class="fa fa-clock-o"></i></button>
+												</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Wählen möglich bis:</label>
+                                <div class="col-md-3">
+                                    <input class="form-control form-control-inline input-medium date-picker"  name="stopVote" size="16" data-date-format="dd.mm.yyyy" value="<?php if(isset($projectsettings['stopVote'])){echo $projectsettings['stopVote'];}  ?>" type="text">
+											<span class="help-block">
+											Datum wählen </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">End-Zeit</label>
+                                <div class="col-md-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control timepicker timepicker-24" name="voteEndTime" value="<?php if(isset($projectsettings['voteEndTime'])){echo $projectsettings['voteEndTime'];}  ?>">
+												<span class="input-group-btn">
+												<button type="button" class="btn default"><i class="fa fa-clock-o"></i></button>
+												</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Schülern -> Nur "wählbare" Projekte anzeigen</label>
+                                <div class="col-md-9">
+                                    <input type="checkbox" class="make-switch" data-on-text="Ja" data-off-text="Nein" name="showVoteableProject" <?php if(isset($projectsettings['showVoteableProject']) AND  $projectsettings['showVoteableProject'] == 1){echo 'checked';}  ?>>
+                                    <p class="help-block">
+                                        Nein = Schüler erhalten alle Projekte in der Übersicht(Projekte mit sind nicht Wählbar -> Wenn MAX Teilnehmer erreicht!)<br>
+                                        Ja = Schüler können nur Angebote sehen die wo Plätze frei sind
+                                    </p>                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Teilnehmerlimit?</label>
+                                <div class="col-md-9">
+                                    <input type="checkbox" class="make-switch" data-on-text="Ja" data-off-text="Nein" name="userLimit" <?php if(isset($projectsettings['userLimit']) AND  $projectsettings['userLimit'] == 1){echo 'checked';}  ?>>
+                                    <p class="help-block">
+                                        Nein = Schüler können alle Kurse ohne Limit wählen <br>
+                                        Ja = Kurse die das Limit erreicht haben können nicht gewählt werden
+                                    </p>                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label">ProWo - Thema</label>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" id="typeahead_example_6" name="prowotopic" class="form-control" value="<?php if(isset($projectsettings['prowotopic'])){echo $projectsettings['prowotopic'];}  ?>"/>
+                                    </div>
+                                    <p class="help-block">
+                                        Thema wird für Überschriften verwendet
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label">Text auf der Startseite der "Wähler"</label>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <textarea class="form-control" rows="3=6" placeholder="Projekt - Inhalt" name="welcomeText"><?php if(isset($projectsettings['welcomeText'])){echo $projectsettings['welcomeText'];}  ?></textarea>
+                                    </div>
+                                    <p class="help-block">
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-actions">
+                                <div class="row">
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button type="submit" class="btn purple"><i class="fa fa-check"></i> Speichern</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
