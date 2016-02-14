@@ -1,0 +1,21 @@
+#!/usr/bin/liquidsoap
+# Log dir
+set("log.file.path", "@Log@")
+
+# Music
+myplaylist = mksafe(playlist("@File@"))
+
+# Start building the feed with music
+radio = myplaylist
+
+output.icecast(
+        @Encode@,
+        host = "localhost",
+        port = @Port@,
+        name = "@Name@",
+        description = "@Description@",
+        url = "@URL@",
+        password = "@Password@",
+        mount = "SGCUnivRadio.ogg",
+        radio
+)

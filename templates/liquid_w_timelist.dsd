@@ -1,0 +1,60 @@
+#!/usr/bin/liquidsoap
+# Log dir
+set("log.file.path", "'.$logf.'")
+
+# Music
+myplaylist = mksafe(playlist("'.$icecDBconf['myplaylist'].'"))
+
+# Start building the feed with music
+radio = myplaylist
+
+full =
+  fallback(track_sensitive=false,
+           [input.http("http://localhost:'.$ICEVar['port'].'/live.ogg"),
+            radio])
+
+output.icecast(
+        '.$icecDBconf['streamAs'].',
+        host = "localhost",
+        port = '.$ICEVar['port'].',
+        name = "'.$icecDBconf['name'].'",
+        description = "'.$icecDBconf['description'].'",
+        url = "'.$icecDBconf['url'].'",
+        password = "'.$ICEVar['source-password'].'",
+        mount = "SGCUnivRadio.ogg",
+        radio
+)';
+
+        $content_with_timeControl = '#!/usr/bin/liquidsoap
+# Log dir
+set("log.file.path", "'.$logf.'")
+
+# Music
+default = mksafe(playlist("'.$icecDBconf['myplaylist'].'"))
+morning = playlist("'.$icecDBconf['myplaylist'].'")
+day     = playlist("'.$icecDBconf['myplaylist'].'")
+night   = playlist("'.$icecDBconf['myplaylist'].'")
+
+radio = fallback([ request.queue(id="request"),
+                    switch([({ '.$icecDBconf['vmstart'].'h-'.$icecDBconf['vmstop'].'h }, morning),
+                    ({ '.$icecDBconf['dstart'].'h-'.$icecDBconf['dstop'].'h }, day),
+                    ({ '.$icecDBconf['nstart'].'h-'.$icecDBconf['nstop'].'h }, night)]),
+                    default])
+
+
+full =
+  fallback(track_sensitive=false,
+           [input.http("http://localhost:'.$ICEVar['port'].'/live.ogg"),
+            radio])
+
+output.icecast(
+        '.$icecDBconf['streamAs'].',
+        host = "localhost",
+        port = '.$ICEVar['port'].',
+        name = "'.$icecDBconf['name'].'",
+        description = "'.$icecDBconf['description'].'",
+        url = "'.$icecDBconf['url'].'",
+        password = "'.$ICEVar['source-password'].'",
+        mount = "SGCUnivRadio.ogg",
+        radio
+)

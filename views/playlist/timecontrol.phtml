@@ -1,0 +1,224 @@
+<?php
+/**
+ * Created by David Schomburg (DashTec - Services)
+ *      www.dashtec.de
+ *
+ *  S:P (StreamersPanel)
+ *  Support: http://board.streamerspanel.de
+ *
+ *  v 4.5.0
+ *
+ *  Kundennummer:   @KDNUM@
+ *  Lizenznummer:   @RECHNR@
+ *  Lizenz: http://login.streamerspanel.de/user/terms
+ */
+?>
+<link href="/js/plugins/timepicker/jquery.ui.timepicker.css" rel="stylesheet">
+<script src="/js/plugins/timepicker/jquery.ui.timepicker.min.js"></script>
+<script>
+    $(function() {                       // On DOM ready
+        $('#myModal').modal('show');     // Show the modal
+    });
+</script>
+
+<div class="modal fade" id="myModal">
+    <form action="/playlist/setTime" method="post">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3><?php echo _('Playlist-Zeitsteuerung'); ?></h3><small><?= _('Definition der Tageszeiten (Angaben in Stunden)') ?></small>
+        </div>
+        <div class="modal-body">
+
+                <div id="pickers" class="widget widget-form">
+                    <div class="control-group">
+                        <label class="control-label" for="timepicker-basic"><?= 'Vormittags'?> </label>
+                        <div class="controls">
+                            <select class="input-small" id="timepicker-basic" type="text" name="vmstart">
+                                <option value="00" <?php if($playlist['vmstart'] == '00'){echo 'selected';} ?>>00</option>
+                                <option value="01" <?php if($playlist['vmstart'] == '01'){echo 'selected';} ?>>01</option>
+                                <option value="02" <?php if($playlist['vmstart'] == '02'){echo 'selected';} ?>>02</option>
+                                <option value="03" <?php if($playlist['vmstart'] == '03'){echo 'selected';} ?>>03</option>
+                                <option value="04" <?php if($playlist['vmstart'] == '04'){echo 'selected';} ?>>04</option>
+                                <option value="05" <?php if($playlist['vmstart'] == '05'){echo 'selected';} ?>>05</option>
+                                <option value="06" <?php if($playlist['vmstart'] == '06'){echo 'selected';} ?>>06</option>
+                                <option value="07" <?php if($playlist['vmstart'] == '07'){echo 'selected';} ?>>07</option>
+                                <option value="08" <?php if($playlist['vmstart'] == '08'){echo 'selected';} ?>>08</option>
+                                <option value="09" <?php if($playlist['vmstart'] == '09'){echo 'selected';} ?>>09</option>
+                                <option value="10" <?php if($playlist['vmstart'] == '10'){echo 'selected';} ?>>10</option>
+                                <option value="11" <?php if($playlist['vmstart'] == '11'){echo 'selected';} ?>>11</option>
+                                <option value="12" <?php if($playlist['vmstart'] == '12'){echo 'selected';} ?>>12</option>
+                                <option value="13" <?php if($playlist['vmstart'] == '13'){echo 'selected';} ?>>13</option>
+                                <option value="14" <?php if($playlist['vmstart'] == '14'){echo 'selected';} ?>>14</option>
+                                <option value="15" <?php if($playlist['vmstart'] == '15'){echo 'selected';} ?>>15</option>
+                                <option value="16" <?php if($playlist['vmstart'] == '16'){echo 'selected';} ?>>16</option>
+                                <option value="17" <?php if($playlist['vmstart'] == '17'){echo 'selected';} ?>>17</option>
+                                <option value="18" <?php if($playlist['vmstart'] == '18'){echo 'selected';} ?>>18</option>
+                                <option value="19" <?php if($playlist['vmstart'] == '19'){echo 'selected';} ?>>19</option>
+                                <option value="20" <?php if($playlist['vmstart'] == '20'){echo 'selected';} ?>>20</option>
+                                <option value="21" <?php if($playlist['vmstart'] == '21'){echo 'selected';} ?>>21</option>
+                                <option value="22" <?php if($playlist['vmstart'] == '22'){echo 'selected';} ?>>22</option>
+                                <option value="23" <?php if($playlist['vmstart'] == '23'){echo 'selected';} ?>>23</option>
+                                <option value="00" <?php if($playlist['vmstart'] == '00'){echo 'selected';} ?>>00</option>
+                            </select>
+
+                            bis
+                            <select class="input-small" id="timepicker-basic" type="text" name="vmstop">
+                                <option value="00" <?php if($playlist['vmstop'] == '00'){echo 'selected';} ?>>00</option>
+                                <option value="01" <?php if($playlist['vmstop'] == '01'){echo 'selected';} ?>>01</option>
+                                <option value="02" <?php if($playlist['vmstop'] == '02'){echo 'selected';} ?>>02</option>
+                                <option value="03" <?php if($playlist['vmstop'] == '03'){echo 'selected';} ?>>03</option>
+                                <option value="04" <?php if($playlist['vmstop'] == '04'){echo 'selected';} ?>>04</option>
+                                <option value="05" <?php if($playlist['vmstop'] == '05'){echo 'selected';} ?>>05</option>
+                                <option value="06" <?php if($playlist['vmstop'] == '06'){echo 'selected';} ?>>06</option>
+                                <option value="07" <?php if($playlist['vmstop'] == '07'){echo 'selected';} ?>>07</option>
+                                <option value="08" <?php if($playlist['vmstop'] == '08'){echo 'selected';} ?>>08</option>
+                                <option value="09" <?php if($playlist['vmstop'] == '09'){echo 'selected';} ?>>09</option>
+                                <option value="10" <?php if($playlist['vmstop'] == '10'){echo 'selected';} ?>>10</option>
+                                <option value="11" <?php if($playlist['vmstop'] == '11'){echo 'selected';} ?>>11</option>
+                                <option value="12" <?php if($playlist['vmstop'] == '12'){echo 'selected';} ?>>12</option>
+                                <option value="13" <?php if($playlist['vmstop'] == '13'){echo 'selected';} ?>>13</option>
+                                <option value="14" <?php if($playlist['vmstop'] == '14'){echo 'selected';} ?>>14</option>
+                                <option value="15" <?php if($playlist['vmstop'] == '15'){echo 'selected';} ?>>15</option>
+                                <option value="16" <?php if($playlist['vmstop'] == '16'){echo 'selected';} ?>>16</option>
+                                <option value="17" <?php if($playlist['vmstop'] == '17'){echo 'selected';} ?>>17</option>
+                                <option value="18" <?php if($playlist['vmstop'] == '18'){echo 'selected';} ?>>18</option>
+                                <option value="19" <?php if($playlist['vmstop'] == '19'){echo 'selected';} ?>>19</option>
+                                <option value="20" <?php if($playlist['vmstop'] == '20'){echo 'selected';} ?>>20</option>
+                                <option value="21" <?php if($playlist['vmstop'] == '21'){echo 'selected';} ?>>21</option>
+                                <option value="22" <?php if($playlist['vmstop'] == '22'){echo 'selected';} ?>>22</option>
+                                <option value="23" <?php if($playlist['vmstop'] == '23'){echo 'selected';} ?>>23</option>
+                                <option value="00" <?php if($playlist['vmstop'] == '00'){echo 'selected';} ?>>00</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="timepicker-basic"><?= 'Tag'?> </label>
+                        <div class="controls">
+                            <select class="input-small" id="timepicker-basic" type="text" name="dstart">
+                                <option value="00" <?php if($playlist['dstart'] == '00'){echo 'selected';} ?>>00</option>
+                                <option value="01" <?php if($playlist['dstart'] == '01'){echo 'selected';} ?>>01</option>
+                                <option value="02" <?php if($playlist['dstart'] == '02'){echo 'selected';} ?>>02</option>
+                                <option value="03" <?php if($playlist['dstart'] == '03'){echo 'selected';} ?>>03</option>
+                                <option value="04" <?php if($playlist['dstart'] == '04'){echo 'selected';} ?>>04</option>
+                                <option value="05" <?php if($playlist['dstart'] == '05'){echo 'selected';} ?>>05</option>
+                                <option value="06" <?php if($playlist['dstart'] == '06'){echo 'selected';} ?>>06</option>
+                                <option value="07" <?php if($playlist['dstart'] == '07'){echo 'selected';} ?>>07</option>
+                                <option value="08" <?php if($playlist['dstart'] == '08'){echo 'selected';} ?>>08</option>
+                                <option value="09" <?php if($playlist['dstart'] == '09'){echo 'selected';} ?>>09</option>
+                                <option value="10" <?php if($playlist['dstart'] == '10'){echo 'selected';} ?>>10</option>
+                                <option value="11" <?php if($playlist['dstart'] == '11'){echo 'selected';} ?>>11</option>
+                                <option value="12" <?php if($playlist['dstart'] == '12'){echo 'selected';} ?>>12</option>
+                                <option value="13" <?php if($playlist['dstart'] == '13'){echo 'selected';} ?>>13</option>
+                                <option value="14" <?php if($playlist['dstart'] == '14'){echo 'selected';} ?>>14</option>
+                                <option value="15" <?php if($playlist['dstart'] == '15'){echo 'selected';} ?>>15</option>
+                                <option value="16" <?php if($playlist['dstart'] == '16'){echo 'selected';} ?>>16</option>
+                                <option value="17" <?php if($playlist['dstart'] == '17'){echo 'selected';} ?>>17</option>
+                                <option value="18" <?php if($playlist['dstart'] == '18'){echo 'selected';} ?>>18</option>
+                                <option value="19" <?php if($playlist['dstart'] == '19'){echo 'selected';} ?>>19</option>
+                                <option value="20" <?php if($playlist['dstart'] == '20'){echo 'selected';} ?>>20</option>
+                                <option value="21" <?php if($playlist['dstart'] == '21'){echo 'selected';} ?>>21</option>
+                                <option value="22" <?php if($playlist['dstart'] == '22'){echo 'selected';} ?>>22</option>
+                                <option value="23" <?php if($playlist['dstart'] == '23'){echo 'selected';} ?>>23</option>
+                                <option value="00" <?php if($playlist['dstart'] == '00'){echo 'selected';} ?>>00</option>
+                            </select>
+                            bis
+                            <select class="input-small" id="timepicker-basic" type="text" name="dstop">
+                                <option value="00" <?php if($playlist['dstop'] == '00'){echo 'selected';} ?>>00</option>
+                                <option value="01" <?php if($playlist['dstop'] == '01'){echo 'selected';} ?>>01</option>
+                                <option value="02" <?php if($playlist['dstop'] == '02'){echo 'selected';} ?>>02</option>
+                                <option value="03" <?php if($playlist['dstop'] == '03'){echo 'selected';} ?>>03</option>
+                                <option value="04" <?php if($playlist['dstop'] == '04'){echo 'selected';} ?>>04</option>
+                                <option value="05" <?php if($playlist['dstop'] == '05'){echo 'selected';} ?>>05</option>
+                                <option value="06" <?php if($playlist['dstop'] == '06'){echo 'selected';} ?>>06</option>
+                                <option value="07" <?php if($playlist['dstop'] == '07'){echo 'selected';} ?>>07</option>
+                                <option value="08" <?php if($playlist['dstop'] == '08'){echo 'selected';} ?>>08</option>
+                                <option value="09" <?php if($playlist['dstop'] == '09'){echo 'selected';} ?>>09</option>
+                                <option value="10" <?php if($playlist['dstop'] == '10'){echo 'selected';} ?>>10</option>
+                                <option value="11" <?php if($playlist['dstop'] == '11'){echo 'selected';} ?>>11</option>
+                                <option value="12" <?php if($playlist['dstop'] == '12'){echo 'selected';} ?>>12</option>
+                                <option value="13" <?php if($playlist['dstop'] == '13'){echo 'selected';} ?>>13</option>
+                                <option value="14" <?php if($playlist['dstop'] == '14'){echo 'selected';} ?>>14</option>
+                                <option value="15" <?php if($playlist['dstop'] == '15'){echo 'selected';} ?>>15</option>
+                                <option value="16" <?php if($playlist['dstop'] == '16'){echo 'selected';} ?>>16</option>
+                                <option value="17" <?php if($playlist['dstop'] == '17'){echo 'selected';} ?>>17</option>
+                                <option value="18" <?php if($playlist['dstop'] == '18'){echo 'selected';} ?>>18</option>
+                                <option value="19" <?php if($playlist['dstop'] == '19'){echo 'selected';} ?>>19</option>
+                                <option value="20" <?php if($playlist['dstop'] == '20'){echo 'selected';} ?>>20</option>
+                                <option value="21" <?php if($playlist['dstop'] == '21'){echo 'selected';} ?>>21</option>
+                                <option value="22" <?php if($playlist['dstop'] == '22'){echo 'selected';} ?>>22</option>
+                                <option value="23" <?php if($playlist['dstop'] == '23'){echo 'selected';} ?>>23</option>
+                                <option value="00" <?php if($playlist['dstop'] == '00'){echo 'selected';} ?>>00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="timepicker-basic"><?= 'Nacht'?> </label>
+                        <div class="controls">
+                            <select class="input-small" id="timepicker-basic" type="text" name="nstart">
+                                <option value="00" <?php if($playlist['nstart'] == '00'){echo 'selected';} ?>>00</option>
+                                <option value="01" <?php if($playlist['nstart'] == '01'){echo 'selected';} ?>>01</option>
+                                <option value="02" <?php if($playlist['nstart'] == '02'){echo 'selected';} ?>>02</option>
+                                <option value="03" <?php if($playlist['nstart'] == '03'){echo 'selected';} ?>>03</option>
+                                <option value="04" <?php if($playlist['nstart'] == '04'){echo 'selected';} ?>>04</option>
+                                <option value="05" <?php if($playlist['nstart'] == '05'){echo 'selected';} ?>>05</option>
+                                <option value="06" <?php if($playlist['nstart'] == '06'){echo 'selected';} ?>>06</option>
+                                <option value="07" <?php if($playlist['nstart'] == '07'){echo 'selected';} ?>>07</option>
+                                <option value="08" <?php if($playlist['nstart'] == '08'){echo 'selected';} ?>>08</option>
+                                <option value="09" <?php if($playlist['nstart'] == '09'){echo 'selected';} ?>>09</option>
+                                <option value="10" <?php if($playlist['nstart'] == '10'){echo 'selected';} ?>>10</option>
+                                <option value="11" <?php if($playlist['nstart'] == '11'){echo 'selected';} ?>>11</option>
+                                <option value="12" <?php if($playlist['nstart'] == '12'){echo 'selected';} ?>>12</option>
+                                <option value="13" <?php if($playlist['nstart'] == '13'){echo 'selected';} ?>>13</option>
+                                <option value="14" <?php if($playlist['nstart'] == '14'){echo 'selected';} ?>>14</option>
+                                <option value="15" <?php if($playlist['nstart'] == '15'){echo 'selected';} ?>>15</option>
+                                <option value="16" <?php if($playlist['nstart'] == '16'){echo 'selected';} ?>>16</option>
+                                <option value="17" <?php if($playlist['nstart'] == '17'){echo 'selected';} ?>>17</option>
+                                <option value="18" <?php if($playlist['nstart'] == '18'){echo 'selected';} ?>>18</option>
+                                <option value="19" <?php if($playlist['nstart'] == '19'){echo 'selected';} ?>>19</option>
+                                <option value="20" <?php if($playlist['nstart'] == '20'){echo 'selected';} ?>>20</option>
+                                <option value="21" <?php if($playlist['nstart'] == '21'){echo 'selected';} ?>>21</option>
+                                <option value="22" <?php if($playlist['nstart'] == '22'){echo 'selected';} ?>>22</option>
+                                <option value="23" <?php if($playlist['nstart'] == '23'){echo 'selected';} ?>>23</option>
+                                <option value="00" <?php if($playlist['nstart'] == '00'){echo 'selected';} ?>>00</option>
+                            </select>
+                            bis
+                            <select class="input-small" id="timepicker-basic" type="text" name="nstop">
+                                <option value="00" <?php if($playlist['nstop'] == '00'){echo 'selected';} ?>>00</option>
+                                <option value="01" <?php if($playlist['nstop'] == '01'){echo 'selected';} ?>>01</option>
+                                <option value="02" <?php if($playlist['nstop'] == '02'){echo 'selected';} ?>>02</option>
+                                <option value="03" <?php if($playlist['nstop'] == '03'){echo 'selected';} ?>>03</option>
+                                <option value="04" <?php if($playlist['nstop'] == '04'){echo 'selected';} ?>>04</option>
+                                <option value="05" <?php if($playlist['nstop'] == '05'){echo 'selected';} ?>>05</option>
+                                <option value="06" <?php if($playlist['nstop'] == '06'){echo 'selected';} ?>>06</option>
+                                <option value="07" <?php if($playlist['nstop'] == '07'){echo 'selected';} ?>>07</option>
+                                <option value="08" <?php if($playlist['nstop'] == '08'){echo 'selected';} ?>>08</option>
+                                <option value="09" <?php if($playlist['nstop'] == '09'){echo 'selected';} ?>>09</option>
+                                <option value="10" <?php if($playlist['nstop'] == '10'){echo 'selected';} ?>>10</option>
+                                <option value="11" <?php if($playlist['nstop'] == '11'){echo 'selected';} ?>>11</option>
+                                <option value="12" <?php if($playlist['nstop'] == '12'){echo 'selected';} ?>>12</option>
+                                <option value="13" <?php if($playlist['nstop'] == '13'){echo 'selected';} ?>>13</option>
+                                <option value="14" <?php if($playlist['nstop'] == '14'){echo 'selected';} ?>>14</option>
+                                <option value="15" <?php if($playlist['nstop'] == '15'){echo 'selected';} ?>>15</option>
+                                <option value="16" <?php if($playlist['nstop'] == '16'){echo 'selected';} ?>>16</option>
+                                <option value="17" <?php if($playlist['nstop'] == '17'){echo 'selected';} ?>>17</option>
+                                <option value="18" <?php if($playlist['nstop'] == '18'){echo 'selected';} ?>>18</option>
+                                <option value="19" <?php if($playlist['nstop'] == '19'){echo 'selected';} ?>>19</option>
+                                <option value="20" <?php if($playlist['nstop'] == '20'){echo 'selected';} ?>>20</option>
+                                <option value="21" <?php if($playlist['nstop'] == '21'){echo 'selected';} ?>>21</option>
+                                <option value="22" <?php if($playlist['nstop'] == '22'){echo 'selected';} ?>>22</option>
+                                <option value="23" <?php if($playlist['nstop'] == '23'){echo 'selected';} ?>>23</option>
+                                <option value="00" <?php if($playlist['nstop'] == '00'){echo 'selected';} ?>>00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    </div> <!-- /widget-content -->
+
+
+        </div>
+        <div class="modal-footer">
+            <input type="submit" name="updateUser" class="btn btn-primary" value="<?php echo _('Speichern'); ?>" />
+        </div>
+    </form>
+</div>

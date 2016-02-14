@@ -1,0 +1,341 @@
+<?php
+/**
+ * Created by David Schomburg (DashTec - Services)
+ *      www.dashtec.de
+ *
+ *  S:P (StreamersPanel)
+ *  Support: http://board.streamerspanel.de
+ *
+ *  v 4.5.0
+ *
+ *  Kundennummer:   @KDNUM@
+ *  Lizenznummer:   @RECHNR@
+ *  Lizenz: http://login.streamerspanel.de/user/terms
+ */
+?>
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="widget widget-table">
+                        <div class="widget-header">
+                            <h3>
+                                <i class="icon-th-list"></i>
+                                <?php echo _('Transcoder'); ?>
+                            </h3>
+                        </div>
+                        <!-- /widget-header -->
+                        <div class="widget-content">
+                            <table class="table table-striped table-bordered table-highlight" id="example">
+                                <thead>
+                                <tr>
+                                    <th><?php echo _('Streamname'); ?></th>
+                                    <th><?php echo _('Hörer (max.)'); ?></th>
+                                    <th><?php echo _('Port'); ?></th>
+                                    <th><?php echo _('Status'); ?></th>
+                                    <th><?php echo _('Playlist'); ?></th>
+                                    <th><?php echo _('Stream als'); ?></th>
+                                    <th><?php echo _('DJ Start/Stop'); ?></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+
+
+
+
+                                # IceCast - Stream
+                                $results = DB::query("SELECT * FROM icecast_rel WHERE accounts_id=%s", $_SESSION['account_id']);
+                                foreach ($results as $row) {
+
+                                    echo '<form action="/station/icecast_editplaylist" method="post"><tr>';
+                                    $account = DB::queryFirstRow("SELECT * FROM icecast_serv WHERE id=%s", $row['icecast_serv_id']);
+                                    echo '<td><a href="http://' . $_SERVER['HTTP_HOST'] . ':' . $account['port'] . '" target="_blank">' . $row['stream_userName'] . '</a><br>';
+
+
+                                    $wert= 'http://'.$_SERVER['HTTP_HOST'] . ':' . $account['port'];
+                                    $fp = @fsockopen($_SERVER['HTTP_HOST'], $account['port'], $errno, $errstr, 1);
+                                    if ($fp)  {
+                                        fclose($fp);
+                                        #$xmsluser = new \core\sp_special\StationXML();
+                                        #$all = $xmsluser->getXMLParms($account['port'], '123');
+                                       # echo _('Zuhörer aktuell: ').$all->CURRENTLISTENERS .'<br>';
+                                        #echo _('Zuhörer maximal: ').$all->PEAKLISTENERS .'<br>';
+                                        #echo _('Zuhörer maximal (Serverconf): ').$all->MAXLISTENERS .'<br>';
+                                       # echo _('Aktueller Song: ').$all->SONGTITLE .'<br>';
+                                    }
+                                    echo '</td>';
+
+                                    echo "<td>" . $account['clients'] . "</td> \n";
+                                    echo "<td>" . $account['port'] . "</td> \n";
+                                    ?>
+                                    <td><?php if ($row['liquid_pid'] == '0') {
+                                            echo '<img src="/image/fuge/status-busy.png" alt="">';
+                                        } else {
+                                            echo '<img src="/image/fuge/status.png" alt="">';
+                                        } ?></td>
+
+                                    <td>
+
+                                        <?php
+                                        $liquidConf = DB::queryFirstRow("SELECT * FROM liquid WHERE id=%s", $row['liquid_id']);
+                                        if($liquidConf['timeplay_is_activ'] == '1'){
+?>
+                                            <?= _('Morgens') ?>:
+                                            <select name="morningplst" size="1" onchange="this.form.submit()">
+                                                <option></option>
+                                                <?php
+                                                $results = DB::query("SELECT * FROM playlist WHERE user_id=%s", $_SESSION['account_id']);
+                                                foreach ($results as $pllst) {
+                                                    ?>
+                                                    <option value="<?php echo $row['id'] . '.' . $pllst['id'] . '.' . $pllst['playlist_name']; ?>"><?php echo $pllst['playlist_name']; ?></option>
+                                                <?php
+                                                }
+                                                ?>
+                                            </select>
+                                            <?php
+                                            $MorningPlaylistName = DB::queryFirstRow("SELECT playlist_name,id FROM playlist WHERE id=%s", $row['playlistM_id']);
+                                            echo '<br>'._('Aktuelle-Playliste: ').'<b>'.$MorningPlaylistName['playlist_name'].'</b>';
+                                            ?>
+                                            <br>
+
+                                            <?= _('Mittags') ?>:
+                                            <select name="dayplst" size="1" onchange="this.form.submit()">
+                                                <option></option>
+                                                <?php
+                                                $results = DB::query("SELECT * FROM playlist WHERE user_id=%s", $_SESSION['account_id']);
+                                                foreach ($results as $pllst) {
+                                                    ?>
+                                                    <option value="<?php echo $row['id'] . '.' . $pllst['id'] . '.' . $pllst['playlist_name']; ?>"><?php echo $pllst['playlist_name']; ?></option>
+                                                <?php
+                                                }
+                                                ?>
+                                            </select>
+                                            <?php
+                                            $MorningPlaylistName = DB::queryFirstRow("SELECT playlist_name,id FROM playlist WHERE id=%s", $row['playlistD_id']);
+                                            echo '<br>'._('Aktuelle-Playliste: ').'<b>'.$MorningPlaylistName['playlist_name'].'</b>';
+                                            ?>
+                                            <br>
+
+
+                                            <?= _('Nachts') ?>:
+                                            <select name="nightplst" size="1" onchange="this.form.submit()">
+                                                <option></option>
+                                                <?php
+                                                $results = DB::query("SELECT * FROM playlist WHERE user_id=%s", $_SESSION['account_id']);
+                                                foreach ($results as $pllst) {
+                                                    ?>
+                                                    <option value="<?php echo $row['id'] . '.' . $pllst['id'] . '.' . $pllst['playlist_name']; ?>"><?php echo $pllst['playlist_name']; ?></option>
+                                                <?php
+                                                }
+                                                ?>
+                                            </select>
+                                            <?php
+                                            $MorningPlaylistName = DB::queryFirstRow("SELECT playlist_name,id FROM playlist WHERE id=%s", $row['playlistN_id']);
+                                            echo '<br>'._('Aktuelle-Playliste: ').'<b>'.$MorningPlaylistName['playlist_name'].'</b>';
+                                            ?>
+
+
+
+
+
+<?php
+                                        }else{?>
+
+                                            <select name="iceplaylstswitch" size="1" onchange="this.form.submit()">
+                                            <option></option>
+                                            <?php
+                                            $results = DB::query("SELECT * FROM playlist WHERE user_id=%s", $_SESSION['account_id']);
+                                            foreach ($results as $pllst) {
+                                                ?>
+                                                <option value="<?php echo $row['id'] . '.' . $pllst['id'] . '.' . $pllst['playlist_name']; ?>"><?php echo $pllst['playlist_name']; ?></option>
+                                            <?php
+                                            }
+                                            ?>
+                                            </select>
+
+                                            <?php
+                                        $Playlistname = DB::queryFirstRow("SELECT playlist_name,id FROM playlist WHERE id=%s", $row['playlist_id']);
+                                        echo '<br>'._('Aktuelle-Playliste: ').'<b>'.$Playlistname['playlist_name'].'</b>';
+
+                                        }
+                                        ?>
+
+                                    </td>
+                                    <td>
+
+                                        <?php
+
+                                        if($liquidConf['streamAs'] == '%mp3(bitrate=128, id3v2=true)'){
+                                            $streamAs = 'MP3';
+                                            $streamSK = 'mp3';
+                                        }elseif($liquidConf['streamAs'] == '%aac(channels=2, samplerate=44100, bitrate=128, adts=true)'){
+                                            $streamAs = 'AAC';
+                                            $streamSK = 'aac';
+                                        }elseif($liquidConf['streamAs'] == '%vorbis.abr(samplerate=44100, channels=2, bitrate=128, max_bitrate=192, min_bitrate=64)'){
+                                            $streamAs = 'OOG';
+                                            $streamSK = 'oog';
+                                        }else{
+                                            $streamAs = _('Bitte wählen!');
+                                        }
+
+                                        ?>
+
+
+                                        <select name="streamAs" size="1" onchange="this.form.submit()">
+                                                <option></option>
+                                                <option value="<?php echo $row['id'] . '.mp3' ?>">MP3</option>
+                                                <option value="<?php echo $row['id'] . '.aac' ?>">AAC</option>
+                                                <option value="<?php echo $row['id'] . '.oog' ?>">OOG</option>
+                                        </select>
+                                        <?php echo '<br>'._('Stream als: ').'<b>'.$streamAs.'</b>'; ?>
+                                    </td>
+                                    <td><?php if ($row['liquid_pid'] == '0') {
+                                            echo '<img src="/image/fuge/status-busy.png">';
+
+                                        } else {
+                                            echo '<img src="/image/fuge/status.png" >';
+                                            ?>
+                                            <button name="icedjSwitch" value="<?php echo $row['id'] . '.0' ?>" class="btn btn-danger"><?= _('Stoppen') ?></button>
+                                        <?php
+                                        }
+
+                                        if ($row['icecast_serv_pid'] == '0') {
+                                            echo _('Bitte starten Sie den Stream-Server');
+                                        } else {
+
+                                            if($row['liquid_pid'] == '0'){
+
+                                                ?>
+                                                <button name="icedjSwitch" value="<?php echo $row['id'] . '.1' ?>" class="btn btn-success"><?= _('Starten') ?></button>
+                                                </form>
+
+                                                <br><br>
+
+                                            <form action="/playlist/timecontrol" method="post">
+
+                                                          <?php if($liquidConf['timeplay_is_activ'] == '0'){ ?>
+                                                    <button class="btn btn-success" value="<?= $row['liquid_id'] ?>" name="startPlayTimer"><img src="/image/fuge/alarm-clock-blue.png" ></button>
+                                                <?php }?>
+
+                                                <?php if($liquidConf['timeplay_is_activ'] == '1'){ ?>
+                                                    <button class="btn btn-danger" value="<?= $row['liquid_id'] ?>" name="stopPlaytimer" ><img src="/image/fuge/alarm-clock-blue.png" ></button>
+                                                    <button class="btn btn-info" value="<?= $row['id'] ?>" name="editPlaytime" ><img src="/image/fuge/calendar-day.png" ></button>
+                                                <?php }?>
+                                            </form>
+                                            <?php
+                                            }
+
+
+                                        }
+
+                                        if($liquidConf['timeplay_is_activ'] == '1'){
+                                            ?>
+                                            <span class="label label-success">Zeitsteuerung aktiv</span>
+                                        <?php
+                                        }else{
+                                            ?>
+                                            <span class="label label-danger">Zeitsteuerung inaktiv</span>
+                                        <?php
+                                        }
+
+                                        ?>
+                                    </td>
+                                    <?php
+                                    echo '</tr>';
+                                }
+
+
+                                # ShoutCast - Stream
+                                $results = DB::query("SELECT * FROM sc_rel WHERE accounts_id=%s", $_SESSION['account_id']);
+                                foreach ($results as $row) {
+                                    echo '<form action="/station/autodj" method="post"><tr>';
+                                    $account = DB::queryFirstRow("SELECT * FROM sc_serv_conf WHERE id=%s", $row['sc_serv_conf_id']);
+                                    echo '<td><a href="http://' . $_SERVER['HTTP_HOST'] . ':' . $account['PortBase'] . '" target="_blank">' . $row['stream_userName'] . '</a><br>';
+
+
+                                    $wert= 'http://'.$_SERVER['HTTP_HOST'] . ':' . $account['PortBase'];
+                                    $fp = @fsockopen($_SERVER['HTTP_HOST'], $account['PortBase'], $errno, $errstr, 1);
+                                    if ($fp)  {
+                                        fclose($fp);
+                                        $xmsluser = new \core\sp_special\StationXML();
+                                    $all = $xmsluser->getXMLParms($account['PortBase'], '123');
+                                    echo _('Zuhörer aktuell: ').$all->CURRENTLISTENERS .'<br>';
+                                    echo _('Zuhörer maximal: ').$all->PEAKLISTENERS .'<br>';
+                                    echo _('Zuhörer maximal (Serverconf): ').$all->MAXLISTENERS .'<br>';
+                                    echo _('Aktueller Song: ').$all->SONGTITLE .'<br>';
+                                    }
+                                    echo '</td>';
+
+                                    echo "<td>" . $account['MaxUser'] . "</td> \n";
+                                    echo "<td>" . $account['PortBase'] . "</td> \n";
+                                    ?>
+                                    <td><?php if ($row['sc_serv_pid'] == '0') {
+                                            echo '<img src="/image/fuge/status-busy.png" alt="">';
+                                        } else {
+                                            echo '<img src="/image/fuge/status.png" alt="">';
+                                        } ?></td>
+
+                                    <td>
+                                        <select name="playlstswitch" size="1" onchange="this.form.submit()">
+                                            <option></option>
+                                            <?php
+                                            $results = DB::query("SELECT * FROM playlist WHERE user_id=%s", $_SESSION['account_id']);
+                                            foreach ($results as $pllst) {
+                                                ?>
+                                                <option value="<?php echo $row['id'] . '.' . $pllst['id'] . '.' . $pllst['playlist_name']; ?>"><?php echo $pllst['playlist_name']; ?></option>
+                                            <?php
+                                            }
+                                            ?>
+                                        </select><?php
+                                        $Playlistname = DB::queryFirstRow("SELECT playlist_name FROM playlist WHERE id=%s", $row['play_list_id']);
+                                        echo '<br>'._('Aktuelle-Playliste: ').'<b>'.$Playlistname['playlist_name'].'</b>';
+                                        ?>
+
+
+                                    </td>
+                                    <td><?php if ($row['sc_trans_pid'] == '0') {
+                                            echo '<img src="/image/fuge/status-busy.png">';
+
+                                        } else {
+                                            echo '<img src="/image/fuge/status.png" >';
+                                            ?>
+                                            <button name="djSwitch" value="<?php echo $row['id'] . '.0' ?>" class="btn btn-danger"><?= _('Stoppen') ?></button>
+                                        <?php
+                                        }
+
+                                        if ($row['sc_serv_pid'] == '0') {
+                                            echo _('Bitte starten Sie den Stream-Server');
+                                        } else {
+
+                                            if($row['sc_trans_pid'] == '0'){
+
+                                                ?>
+                                                <button name="djSwitch" value="<?php echo $row['id'] . '.1' ?>" class="btn btn-success"><?= _('Starten') ?></button>
+                                            <?php
+                                            }
+
+
+                                        } ?>
+                                    </td>
+                                    <?php
+                                    echo '</tr></form>';
+                                }
+
+                                ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /widget-content -->
+
+
+                    </div>
+                    <!-- /widget -->
+                </div>
+                <!-- /span12 -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /.container -->
+    </div> <!-- /#content -->
+<?php require __DIR__ . '/../footer.phtml' ?>
