@@ -1,5 +1,6 @@
 <?php
 
+
 $app = new Slim\App([
     'php.error-reporting' => E_ALL | E_STRICT,
     'middleware.authentication' => [
