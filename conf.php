@@ -1,31 +1,56 @@
 <?php
-$app = new \Slim\Slim([
-    'mylov.version' => '0.1',
-    'mylov.version_clear' => '01',
-    'db.user' => 'wrsSQLuser',
-    'db.password' => '',
-    'db.name' => '',
-    'demo_mod' => false,
-    'view' => new \SP\Views\MyUltimateView(),
-    'templates.path' => __DIR__ . '/views',
-    'db.host' => 'localhost',
-    'db.port' => 3306,
-    'db.encoding' => 'utf8',
-    'php.timezone' => 'Europe/Berlin',
-    'php.error-reporting' => E_ALL | E_STRICT,
-    'middleware.authentication' => [
-        'filter_mode' => \SP\Middleware\AbstractFilterableMiddleware::EXCLUSION,
-        'route_names' => ['login', 'doLogin', 'doLogout', 'logout'],
-    ],
-    'middleware.authorization' => [
-        'filter_mode' => \SP\Middleware\AbstractFilterableMiddleware::INCLUSION,
-        'route_names' => ['restricted', 'consumer'],
-        'route_group_mappings' => [
-            'restricted' => ['adm'],
-            'consumer' => ['usr'],
-            'both' => ['adm', 'usr'],
+/**
+ * Created by DashTec - Services
+ *
+ *      SnapCare 2015
+ *
+ * Date: 09.10.2015
+ * Time: 22:34
+ * v0.0.13.001
+ * CUT: 2015-11-13 21:29:18
+ */
+
+
+$app = new Slim\App([
+    'settings' => [
+        'determineRouteBeforeAppMiddleware' => true,
+        'app.version' => '0.0.1',
+        'db.name' => 'xxxxxxxxx',
+        'db.user' => 'xxxxxxxxx',
+        'db.host' => 'localhost',
+        'db.password' => 'xxxxxx',
+        'displayErrorDetails' => true,
+        'renderer' => [
+            'template_path' => __DIR__ . '/views/',
+        ],
+        'middleware' => [
+            'authentication' => [
+                'filter_mode' => \DashTec\Middleware\AbstractFilterableMiddleware::EXCLUSION,
+                'route_names' => ['login'],
+            ],
+            'authorization' => [
+                'filter_mode' => \DashTec\Middleware\AbstractFilterableMiddleware::INCLUSION,
+                'route_names' => ['root', 'basic', 'inventory', 'op','disorder','medkomp','request','reservation','beta'],
+                'route_group_mappings' => [
+                    'root'          => ['root_permission'],
+                    'basic'         => [
+                        'root_permission',
+                        'inventory_permission',
+                        'operator_permission',
+                        'disorder_permission',
+                        'medkomp_permission',
+                        'request_permission',
+                        'reservation_permission',
+                        'beta_permission'],
+                    'inventory'     => ['root_permission', 'inventory_permission'],
+                    'op'            => ['root_permission', 'operator_permission'],
+                    'disorder'      => ['root_permission', 'disorder_permission'],
+                    'medkomp'       => ['root_permission', 'medkomp_permission'],
+                    'request'       => ['root_permission', 'request_permission'],
+                    'reservation'   => ['root_permission', 'reservation_permission'],
+                    'beta'          => ['root_permission', 'beta_permission'],
+                ],
+            ],
         ],
     ],
 ]);
-
-

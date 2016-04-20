@@ -1,59 +1,56 @@
 <?php
-/**
- * Created by David Schomburg (DashTec - Services)
- *      www.dashtec.de
- *
- *  S:P (StreamersPanel)
- *  Support: http://board.streamerspanel.de
- *
- *  v 4.0.0
- *
- *  Kundennummer:   @KDNUM@
- *  Lizenznummer:   @RECHNR@
- *  Lizenz: http://login.streamerspanel.de/user/terms
- */
+require_once __DIR__ . '/vendor/autoload.php';
+$lifetime = 900000;
 session_start();
+setcookie(session_name(), session_id(), time() + $lifetime);
+# MicroTime for Devel.
+$beginn = microtime(true);
 
-require_once __DIR__ . '/core/SplClassLoader.php';
-require_once __DIR__ . '/core/DB.php';
-include_once __DIR__ . '/core/request/Requests.php';
+/**
+ *      Config load
+ */
 
-(new SplClassLoader('Slim', __DIR__ . '/core'))->register();
-(new SplClassLoader('SP', __DIR__ . '/core'))->register();
-(new SplClassLoader('core', __DIR__ ))->register();
+require_once 'conf.php';
 
-require_once __DIR__ . '/conf.php';
+/**
+ *      Render-Engine
+ */
+$container = $app->getContainer();
+// view renderer
+$container['renderer'] = function ($c) {
+    $settings = $c->get('settings')['renderer'];
+    return new Slim\Views\PhpRenderer($settings['template_path']);
+};
 
-$app->add(new \SP\Middleware\AuthorizationMiddleware());
-$app->add(new \SP\Middleware\AuthenticationMiddleware());
-
-# Active Routes
-require_once __DIR__ . '/config/database.php';
-require_once __DIR__ . '/routes/authentication.php';
-
-require_once __DIR__ . '/routes/basic.php';
-require_once __DIR__ . '/routes/adm/admBasic.php';
-require_once __DIR__ . '/routes/adm/admAddProject.php';
-require_once __DIR__ . '/routes/adm/admChoice.php';
-require_once __DIR__ . '/routes/adm/userList.php';
-require_once __DIR__ . '/routes/adm/settings.php';
-require_once __DIR__ . '/routes/adm/admexport.php';
-
+/**
+ *      Include der Middleware
+ */
+$app->add(new \DashTec\Middleware\AuthenticationMiddleware($app));
 
 
-# GETTEXT Cofig
-if(empty($_SESSION['local'])){
-    $_SESSION['local'] = 'de_DE';
-}
-$local = $_SESSION['local'];  # de_DE , en_US, es_MX
-putenv("LC_ALL=".$local.".utf8");
-setlocale(LC_ALL, $local.".utf8");
-bindtextdomain($local, __DIR__.'/locale');
-textdomain($local);
+/**
+ *      Laden der Routen
+ */
+require_once 'routes.php';
+
+
+/**
+ *      Class Namespace - Autoloader
+ */
+include_once 'library/NamespaceAutoloader.class.php';
+spl_autoload_register(array('NamespaceAutoloader', 'autoload'));
+
+//Assets Dir
+const INSTALL_DOMAIN = "https://app.wr-schule.de";
+
+// Settings Access
+$_SESSION['SlimSettings'] = $container['settings'];
+
+DB::$user = $_SESSION['SlimSettings']['db.user'];
+DB::$password = $_SESSION['SlimSettings']['db.password'];
+DB::$dbName = $_SESSION['SlimSettings']['db.name'];
+DB::$host = $_SESSION['SlimSettings']['db.host'];
 
 
 
-if(!defined('SP_AREA')){
 $app->run();
-}
-
